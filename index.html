@@ -5,14 +5,19 @@
   <style>
     .container {
       display: flex;
+      margin: 0 auto;
+      max-width: 50%;
     }
     .column {
       flex: 50%;
       padding: 10px;
     }
     .profile-photo {
-      width: 30%;
+      width: 100%;
       max-width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: 0;
     }
     .name {
       font-weight: bold;
@@ -20,10 +25,24 @@
       text-align: center;
     }
     .description {
-      text-align: center;
+      text-align: left;
     }
     .research {
       margin-top: 20px;
+      text-align: left;
+    }
+    .links {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .links a {
+      margin: 0 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .container {
+        max-width: 95%;
+      }
     }
   </style>
 </head>
@@ -34,9 +53,16 @@
     </div>
     <div class="column">
       <div class="name">Lluís Salvat Niell</div>
+      <div class="links">
+        [ <a href="mailto:lluissalvatniell@gmail.com">lluissalvatniell@gmail.com</a> |
+        <a href="https://www.linkedin.com/in/lluissalvatniell/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/lluissalvat" target="_blank">GitHub</a> |
+        <a href="https://scholar.google.com/" target="_blank">Google Scholar</a> |
+        <a href="https://twitter.com/lsalvatn" target="_blank">Twitter ]</a>
+      </div>
       <div class="description">
         I'm a Mathematics and Physics student at The University of Manchester, focusing on Probability & Statistics and Theoretical Quantum Mechanics. 
-        I'm also a Research Intern at Harvard University, working in the <a href="http://people.seas.harvard.edu/~samurphy/lab/overview.html" target="_blank">Statistical Reinforcement Learning Laboratory</a> and supervised by 
+        I'm also a Research Assistant at Harvard University, working in the <a href="http://people.seas.harvard.edu/~samurphy/lab/overview.html" target="_blank">Statistical Reinforcement Learning Laboratory</a> and supervised by 
         <a href="https://lsn235711.github.io/" target="_blank">Dr. Shuangning Li</a> & <a href="http://people.seas.harvard.edu/~samurphy/" target="_blank">Prof. Susan Murphy</a>.
       </div>
     </div>
